@@ -1,0 +1,11 @@
+[build]
+command = "npm install" 
+
+[dev]
+command = "npm start"
+publish = "views" # تغييره إلى المجلد الذي تنشئ فيه الملفات الثابتة إذا كنت تستخدمه
+
+[[redirects]]
+  from = "/*"
+  to = "/layout.hbs"
+  status = 200
