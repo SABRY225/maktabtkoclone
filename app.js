@@ -12,7 +12,7 @@ var app = express();
 require('dotenv').config()
 // db
 
-const DBURL=process.env.URL
+const DBURL=process.env.URL_DB
 
 mongoose.connect(DBURL).then(() => console.log('Connected!'))
 
